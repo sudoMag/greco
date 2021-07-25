@@ -10,18 +10,21 @@ greco-logo {
     transition-duration: 1s;
 }
 
-footer {
+loader {
     display: flex;
     width: 100%;
+    height: 100%;
+    position: absolute;
     background-color: #efefef;
     transition-duration: 1s;
     transition-delay: 1s;
+    z-index: 4;
 }
 
 #logo-svg {
     width: 110px;
     height: auto;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 .st0{fill:#646464;}
@@ -34,4 +37,24 @@ footer {
     font-family: calibri, ubuntu;
     color: #646464;
     transition-duration: 1s;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#search-container {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+#search-input {
+    height: 30px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 50px;
+    background-color: #efefef;
 }
