@@ -1,4 +1,3 @@
-const { Window } = require('./windows-manager.js');
+const {beginLoader} = require('./windows/loader/loader.js');
 
-const loader = new Window();
-loader.openNewWindow();
+beginLoader();

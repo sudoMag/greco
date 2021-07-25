@@ -1,0 +1,37 @@
+body {
+    background-color: #ffffff;
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+}
+
+greco-logo {
+    margin: auto;
+    transition-duration: 1s;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #efefef;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+
+#logo-svg {
+    width: 110px;
+    height: auto;
+    transition-duration: 1s;
+}
+
+.st0{fill:#646464;}
+
+.st1{fill:#FFFFFF;}
+
+#title-app {
+    text-align: center;
+    margin: auto;
+    font-family: calibri, ubuntu;
+    color: #646464;
+    transition-duration: 1s;
+}

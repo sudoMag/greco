@@ -1,6 +1,9 @@
 {
-    "templatesFileRute": "view_templates",
-    "viewFilenames": {
-        "loaderPage": "loader.html"
+    "searchPage": {
+        "viewFile": "loader.html",
+        "sizes": {
+            "width": 400,
+            "height": 500
+        }
     }
 }
