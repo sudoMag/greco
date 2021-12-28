@@ -1,15 +1,21 @@
 {
   "name": "greco",
-  "version": "1.0.0",
+  "productName": "Greco APP",
+  "version": "0.0.1",
   "description": "",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "package-win": "electron-packager . Greco --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Greco\""
   },
   "author": "sudoMag",
   "license": "ISC",
   "dependencies": {
-    "electron": "^13.1.7"
+  },
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-packager": "^15.4.0",
+    "electron-winstaller": "^5.0.0"
   }
 }

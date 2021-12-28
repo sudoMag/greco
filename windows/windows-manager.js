@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
 class Window {
   constructor({
@@ -15,10 +16,18 @@ class Window {
     const newWindow = new BrowserWindow({
       width: this.width,
       height: this.height,
-      frame: false,
-      icon: './windows/icon.png'
+      minWidth: this.width,
+      minHeight: this.height,
+      frame: true,
+      icon: './windows/icon.png',
+      webPreferences: {
+        preload: path.join(app.getAppPath(), 'preload.js')
+      },
+      title: 'GRECO'
     });
-    newWindow.loadFile(this.file);
+    newWindow.removeMenu();
+    //newWindow.loadURL('http://localhost:3000'); // <-- dev
+    newWindow.loadFile('./react-app/build/index.html') // <-- build 
   }
 
   whenAppReadyCreateWindow() {
