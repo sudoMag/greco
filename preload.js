@@ -14,6 +14,10 @@ contextBridge.exposeInMainWorld(
     dictionaryNames: async () => {
       const results = await ipcRenderer.sendSync('dictionariesNames');
       return results;
+    },
+    checkUpdates: async () => {
+      const results = await ipcRenderer.sendSync('searchUpdates');
+      return results;
     }
   }
 )

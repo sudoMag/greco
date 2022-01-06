@@ -12,6 +12,7 @@
   "author": "sudoMag",
   "license": "ISC",
   "dependencies": {
+    "update-electron-app": "^2.0.1"
   },
   "devDependencies": {
     "electron": "^13.1.7",

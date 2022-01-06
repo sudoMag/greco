@@ -25,7 +25,7 @@ class Window {
       },
       title: 'GRECO'
     });
-    newWindow.removeMenu();
+    //newWindow.removeMenu();
     
     newWindow.loadURL('http://localhost:3000'); // <-- dev
     //newWindow.loadFile('./react-app/build/index.html') // <-- build 
