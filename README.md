@@ -2,7 +2,7 @@
 
 ## Electron.js Desktop App for windows platforms
 
-In this project is in use Electron.js whith create-react-app and styled-components.
+In this project is in use Electron.js with create-react-app and styled-components.
 
 It currently has a small number of words in a .JSON file. But it is planned to implement a mySQL database. 
 
