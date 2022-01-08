@@ -8,17 +8,25 @@ It currently has a small number of words in a .JSON file. But it is planned to i
 
 ## - Start~
 
+first install the dependecies 
+
+`npm install`
+
 for start this project in develoment, move to react-app folder
 
 `>$ cd react-app` 
 
-and start the develoment server `npm-start`,
+install dependencies of create-react-app
+
+`npm install`
+
+and start the develoment server with `npm-start`,
 
 when it start, move back to the main folder 
 
 `>$ cd..` 
 
-and start the electron app `npm start`.
+and start the electron app with `npm start`.
 
 ## - Testing~
 
